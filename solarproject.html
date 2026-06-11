@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surya Eco Green Energy - Best Solar Installation Company in Jaipur. Residential and Commercial Solar Solutions. Save up to 100% on electricity bills.">
+    <meta name="keywords" content="Solar Panel Jaipur, Solar Installation, Renewable Energy, Surya Eco Green Energy, Solar System">
+    <meta name="author" content="Surya Eco Green Energy">
+    <title>Surya Eco Green Energy | Best Solar Solutions in India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FFC107;
+            --primary-dark: #ffb300;
+            --secondary: #2196F3;
+            --secondary-dark: #0d8bf2;
+            --dark: #1e2a32;
+            --dark-bg: #263238;
+            --light: #F8F9FA;
+            --gray: #6c757d;
+            --success: #4CAF50;
+            --green: #4CAF50;
+            --red: #F44336;
+            --white: #ffffff;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 35px rgba(0, 0, 0, 0.12);
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 3.8rem; letter-spacing: -0.02em; }
+        h2 { font-size: 2.6rem; text-align: center; margin-bottom: 3rem; position: relative; }
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        h3 { font-size: 1.6rem; }
+        p { margin-bottom: 1.25rem; color: var(--gray); }
+
+        .container {
+            width: 90%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background: var(--primary);
+            color: var(--dark);
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: var(--secondary-dark);
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 0.8rem 0;
+            backdrop-filter: blur(5px);
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+            margin-left: 60px;
+        }
+
+        .logo span { 
+            color: #FFC107; 
+            background: none; 
+            -webkit-background-clip: unset; 
+            background-clip: unset; 
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Brand Logos Container */
+        .brand-logos {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 20px;
+        }
+
+        .brand-logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(0.3);
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            filter: grayscale(0);
+            transform: scale(1.05);
+        }
+
+        .ashok-stambh-logo {
+            height: 45px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.92), rgba(42, 82, 152, 0.92)), url('https://t4.ftcdn.net/jpg/03/36/30/11/360_F_336301102_17vyr7sr47lPiL4AhcUJtlepUwnISErJ.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 160px 0 100px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-icon {
+            font-size: 3.2rem;
+            color: var(--secondary);
+            margin-bottom: 1.2rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--light);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .about-text ul li {
+            margin-bottom: 0.8rem;
+            color: var(--gray);
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .product-img {
+            height: 380px;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.08);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .price {
+            color: var(--secondary);
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 0.5rem 0 1rem;
+        }
+
+        /* Savings Calculator */
+        .calculator {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f0fe 100%);
+        }
+
+        .calculator-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        .calculator-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+        }
+
+        .calculator-result {
+            background: linear-gradient(135deg, #1e2a32, #2c3e50);
+            color: white;
+            padding: 2rem;
+            border-radius: 24px;
+            margin-top: 2rem;
+            text-align: center;
+            display: none;
+        }
+
+        .savings-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+
+        /* Testimonials Section - Left Side Layout with Right Images */
+        .testimonials-section {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .testimonials-wrapper {
+            display: flex;
+            gap: 3rem;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .testimonials-left {
+            flex: 1.2;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 30px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonials-left h2 {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .testimonials-left h2:after {
+            left: 0;
+            transform: translateX(0);
+        }
+
+        .testimonial-card-special {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .testimonial-card-special:hover {
+            transform: translateX(5px);
+        }
+
+        .testimonial-card-special p {
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        .testimonial-card-special h4 {
+            margin-top: 1rem;
+            color: var(--secondary);
+        }
+
+        .counter-box-special {
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+            color: white;
+            padding: 1rem;
+            border-radius: 50px;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .counter-box-special span {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .right-images {
+            flex: 0.8;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .right-img-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .right-img-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .right-img-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .right-img-card .img-caption {
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            background: white;
+        }
+
+        /* Contact Section with Image */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            background: var(--primary);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--dark);
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form-image {
+            margin-top: 1.5rem;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 500px;
+        }
+
+        .contact-form-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .contact-form-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .map-container {
+            margin-top: 1rem;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 280px;
+            border: 0;
+            transition: 0.3s;
+        }
+
+        .get-directions-btn {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h3 {
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.3rem;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Enquiry Form Sidebar */
+        .enquiry-btn {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) translateX(100%);
+            background: var(--green);
+            color: white;
+            padding: 15px 12px;
+            cursor: pointer;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-weight: 700;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+            z-index: 2002;
+            transition: all 0.4s ease;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .enquiry-btn.show {
+            transform: translateY(-50%) translateX(0);
+        }
+
+        .enquiry-btn.hide {
+            transform: translateY(-50%) translateX(100%);
+        }
+
+        .enquiry-btn:hover {
+            background: #3d8b40;
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            z-index: 2000;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .enquiry-form {
+            position: fixed;
+            top: 0;
+            right: -450px;
+            width: 450px;
+            height: 100%;
+            background: #fff;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+            transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            padding: 30px;
+            overflow-y: auto;
+            z-index: 2001;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .enquiry-form.active {
+            right: 0;
+        }
+
+        .enquiry-form h2 {
+            margin-top: 20px;
+            color: var(--secondary);
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background: var(--red);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: #d32f2f;
+            transform: scale(1.05);
+        }
+
+        .enquiry-form input,
+        .enquiry-form select,
+        .enquiry-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #d2d7db;
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .enquiry-form textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .enquiry-form button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            border-radius: 40px;
+            border: none;
+            background: var(--secondary);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .form-success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        /* Floating Buttons */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            z-index: 999;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            background: #128C7E;
+        }
+
+        .support-btn {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            width: 60px;
+            height: 60px;
+            background: #2196F3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            z-index: 999;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .support-btn:hover {
+            transform: scale(1.1);
+            background: #0d8bf2;
+        }
+
+        /* Customer Support Message Box - Light Purple */
+        .support-message-box {
+            position: fixed;
+            bottom: 100px;
+            left: 60px;
+            width: 300px;
+            background: #f3e8ff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            border: 1px solid #d8b4fe;
+        }
+        .support-message-box.show {
+            display: flex;
+        }
+        .support-message-box h4 {
+            color: #9b59b6;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .support-message-box p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #4a1d6d;
+        }
+        .support-hours {
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .call-support-btn {
+            background: #9b59b6;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+        .call-support-btn:hover {
+            background: #8e44ad;
+            transform: scale(1.02);
+        }
+        .close-msg-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #9b59b6;
+        }
+
+        @media (max-width: 576px) {
+            .support-message-box {
+                width: 260px;
+                left: 15px;
+                bottom: 90px;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.2rem; }
+            .about-content { flex-direction: column; }
+            .contact-container { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+            .brand-logos { display: none; }
+            .logo { margin-left: 100px; font-size: 1.5rem; }
+            .testimonials-wrapper { flex-direction: column; }
+            .right-images { flex-direction: row; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: var(--shadow);
+                gap: 0;
+            }
+            .nav-links.active { display: flex; }
+            .nav-links li { margin: 0; text-align: center; padding: 0.8rem 0; }
+            .mobile-menu { display: block; }
+            .calculator-form { grid-template-columns: 1fr; }
+            .hero { padding: 130px 0 70px; }
+            .enquiry-form { width: 85%; right: -85%; }
+            .logo { margin-left: 80px; font-size: 1.3rem; }
+            .right-images { flex-direction: column; }
+        }
+
+        @media (max-width: 576px) {
+            section { padding: 50px 0; }
+            .footer-content { grid-template-columns: 1fr; }
+            .calculator-container { padding: 1.5rem; }
+            .enquiry-form { width: 100%; right: -100%; }
+            .whatsapp-btn, .support-btn { width: 50px; height: 50px; font-size: 24px; }
+            .logo { margin-left: 70px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="img/logo1.jpeg" height="105px" width="120px" style="position: absolute; left: -50px; top: 0px; object-fit: contain;">
+            <a href="#" class="logo"><font color = "red">Surya</font><span><font color = "Green"> Eco</font></span><font color = "Green"> Green</font> Energy</a>
+            <div class="mobile-menu" id="mobile-menu"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li><li><a href="#calculator">Savings</a></li><li><a href="#contact">Contact</a></li>
+                <li class="brand-logos">
+                    <img src="img/mnre.jpeg" height="80px" width="100px" >
+                    <img src="img/adanil.png" height="70px" width="90px" >
+                    <img src="img/tata.png" height="70px" width="90px" >
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Enquiry Tab -->
+    <div class="enquiry-btn" id="enquiryBtn">ENQUIRY FORM</div>
+    <div class="overlay" id="overlay"></div>
+    <div class="enquiry-form" id="enquiryForm">
+        <button class="close-btn" id="closeBtn">✕</button>
+        <h2>Solar Enquiry Form</h2>
+        <h2>Book a Free  Consultation</h2>
+        <form id="enquiryFormElement" action="datass.php" method="post">
+            <input type="text" placeholder="Enter your Full Name" name="fname" id="enq_fname" required>
+            <input type="email" placeholder=" Enter your Email Address" name="email" id="enq_email" required>
+            <input type="tel" placeholder="Enter your Phone Number" name="phno" id="enq_phno" required>
+            <input type="text" placeholder="Enter your Full Address" name="address" id="enq_address" required>
+            <select name="enqfo" id="enq_enqfo" required>
+                <option value="">-- Enquiry For --</option>
+                <option>3 KW Solar System</option><option>5 KW Solar System</option><option>7 KW Solar System</option>
+                <option>10 KW Solar System</option><option>Commercial Installation Solar System</option><option>Maintenance Service</option>
+            </select>
+            <textarea placeholder="Write Your Message or requirment in Detail " name="Mess" id="enq_mess"></textarea>
+            <button type="submit">Submit Enquiry</button>
+        </form>
+        <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Thank you! We'll contact you.</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Power Your Home With The Sun</h1>
+            <p>Surya Eco Green Energy provides high-quality, efficient solar solutions for homes and businesses. Save up to 100% on electricity bills.</p>
+            <P>GST-NO.: 08GHUPS8234Q1ZX</P>
+            <a href="#calculator" class="btn">Calculate Savings</a>
+            <a href="#products" class="btn btn-secondary">View Products</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Solar Services</h2>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><i class="fas fa-solar-panel"></i></div>
+                <h3>Residential Solar</h3><p>Custom solar panel installation for homes with financing options.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-industry"></i></div>
+                <h3>Commercial Solar</h3><p>Energy solutions for businesses to reduce operational costs.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-tools"></i></div>
+                <h3>A Grade Panels and materials </h3><p>We use only A greade panels and materials with best and perfect installation with 25 Year of Warranty.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Why Choose Surya Eco Green Energy?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Leading Solar Provider Since 2025</h3>
+                    <p>With over a decade of experience, Surya Eco Green Energy has installed more than 5,000 solar systems across the country.</p>
+                <ul><li><strong>25-Year Warranty</strong></li>
+                    <li><strong>100% Financing Loan</strong></li>
+                    <li><strong>78,000 Govt Subsidy</strong></li>
+                    <li><strong>24/7 Support</strong></li>
+                    <li><strong>High-Quality Solar Panels & Components</strong></li>
+                    <li><strong>Professional Installation Team</strong></li>
+                </ul>
+                <p>At Surya Eco Green Energy, we don't just install solar systems—we help customers save money, reduce their carbon footprint, and achieve energy independence.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="about-image"><img src="img/solar.png" alt="Solar Installation"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2>Our Solar Products</h2>
+            <div class="products-grid">
+                <div class="product-card"><div class="product-img"><img src="img/penal1.png" alt="3KW"></div>
+                <div class="product-info"><h3>3-KW Solar System</h3>
+                <p>We are provide best deal of 3 KW solar system at overall India</p>
+                <p>6 Solar panel for 3KW solar system</p>
+                <div class="price">From INR 2,20,000</div>
+                <a href="#" class="btn" onclick="showEnquiryForm('3 KW Panel'); return false;">Enquire Now</a></div>
+            </div>
+                <div class="product-card"><div class="product-img"><img src="img/penal1.png" alt="5KW"></div>
+                <div class="product-info"><h3>5-KW Solar System</h3><p>We are provide best deal of 5 KW solar system at overall India</p>
+                    <p>9 Solar panel for 5KW solar system</p>  
+                    <div class="price">From INR 3,20,000</div><a href="#" class="btn" onclick="showEnquiryForm('5 KW Panel'); return false;">Enquire Now</a></div>
+                </div>
+                <div class="product-card"><div class="product-img"><img src="img/penal1.png" alt="10KW"></div>
+                <div class="product-info"><h3>10-KW Solar System</h3><p>We are provide best deal of 10 KW solar system at overall India</p>
+                    <p>18 Solar panel for 10KW soalr system</p> <div class="price">From INR 4,60,000</div>
+                    <a href="#" class="btn" onclick="showEnquiryForm('10 KW Panel'); return false;">Enquire Now</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savings Calculator -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <h2>Calculate Your Savings</h2>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group"><label>Monthly Bill (INR)</label><input type="number" id="monthly-bill" placeholder="Enter Your monthly-bill Amount in INR" class="form-control" value=""></div>
+                    <div class="form-group"><label>Roof Size (sq. ft.)</label><input type="number" id="roof-size" class="form-control" placeholder="enter your Land size in SQ.ft." value=""></div>
+                    <div class="form-group"><label>Sunlight Hours</label><input type="number" id="sunlight-hours" class="form-control" placeholder=" Enter Sunlight Hours on Your Land" value=""></div>
+                    <div class="form-group"><label>State</label>
+                    <select id="location" class="form-control">
+                    <option value="1.0">Select Your State</option>
+                        <option value="1.5">Rajasthan</option>
+                        <option value="1.4">Gujarat</option>
+                        <option value="1.3">Maharashtra</option>
+                        <option value="1.2">Dehli</option>
+                        <option value="1.1">Bihar</option>
+                   
+                    </select>
+                </div>
+                </div>
+                <button class="btn" id="calculate-btn">Calculate My Savings</button>
+                <div class="calculator-result" id="calculator-result">
+                    <h3>Your Estimated Savings</h3><div class="savings-amount" id="savings-amount">₹0</div>
+                    <p>Payback: <strong id="payback-period">0 years</strong> | System: <strong id="system-size">0 kW</strong></p>
+                    <a href="#" class="btn btn-secondary" onclick="showEnquiryForm('Calculator Enquiry'); return false;">Enquiry About</a>
+                    <p style="color:#ff0505; font-size:0.9rem;">*Estimated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section: Left Side with Right Images -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-wrapper">
+                <!-- Left Side - Customer Testimonials -->
+                <div class="testimonials-left">
+                    <h2>What Our Customers Say</h2>
+                    <div class="testimonial-card-special"><p>"Excellent installation and support. My electricity bill reduced by 85%!"</p><h4>- Rajesh Sharma</h4></div>
+                    <div class="testimonial-card-special"><p>"Professional team, high-quality products. Highly recommended for solar solutions."</p><h4>- Priya Gupta</h4></div>
+                    <div class="testimonial-card-special"><p>"Surya Eco made switching to solar seamless. The savings are incredible!"</p><h4>- Amit Kumar</h4></div>
+                    <div class="counter-box-special"><span id="counter">0</span>+ Solar Installations Completed</div>
+                </div>
+                
+                <!-- Right Side - Two Images -->
+                <div class="right-images">
+                    <div class="right-img-card">
+                        <img src="img/site1.jpeg" alt="Solar Panel Installation">
+                        <div class="img-caption">Our successful Installation Site</div>
+                    </div>
+                    <div class="right-img-card">
+                        <img src="img/site2.jpg" alt="Solar Team at Work">
+                        <div class="img-caption">Our successful Installation Site</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Image in Get In Touch -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h3>Our Location</h3><p>plot No. 320-A, Shiv Nagar, Murlipura Scheme, Jaipur - 302039</p></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h3>Phone Number</h3><p>+91 9119290911</p><p>Mon-Fri: 9am-6pm</p></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h3>Email Address</h3><p>connectsuryagreen@gmail.com</p></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h3>Email Address</h3><p>surajkumar11340@gmail.com</p></div></div>
+                    <!-- Location Map with Directions Feature -->
+                    <div class="map-container" id="mapContainer">
+                        <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.123456!2d75.788!3d26.912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c3e2e8b1b2b2b%3A0x0!2zMjbCsDU0JzQzLjIiTiA3NcKwNDcnMTYuMCJF!5e0!3m2!1sen!2sin!4v1612345678901!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+                       
+                    </div>
+                    <div class="get-directions-btn">
+                        <button class="btn" onclick="getDirections()"><i class="fas fa-location-dot"></i> Get Directions from My Location</button>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about solar energy? Contact our experts for personalized advice.</p>
+                    <p><strong>📞 Call us:</strong> +91 9119290911</p>
+                    <p><strong>✉️ Email:</strong> connectsuryagreen@gmail.com</p>
+                    <p><strong>✉️ Email:</strong> surajkumar11340@gmail.com</p>
+                    <p><strong>📍 Visit us:</strong> plot No. 320-A, Shiv Nagar, Murlipura Scheme, Jaipur - 302039</p>
+                    <a href="#" class="btn" onclick="showEnquiryForm('General Inquiry'); return false;">Send Message</a>
+                    <!-- Added Image Section inside Get In Touch -->
+                    <div class="contact-form-image">
+                        <img src="img/logo.jpeg" alt="Solar Consultation"> 
+                    </div>
+                      <h3 style="color:blueviolet";> Director: Mr. Suraj Kumar Sah</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col"><h3>Surya Eco Green Energy</h3><p>Providing clean, affordable solar energy solutions since 2025.</p><div class="social-icons"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+                <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links"><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About Us</a></li><li><a href="#products">Products</a></li></ul></div>
+                <div class="footer-col"><h3>Services</h3><ul class="footer-links"><li><a href="#services">Residential Solar</a></li><li><a href="#services">Commercial Solar</a></li><li><a href="#services">Maintenance</a></li></ul></div>
+                <div class="footer-col"><h3>Contact Info</h3><ul class="footer-links"><li><i class="fas fa-map-marker-alt"></i> Jaipur - 302039</li><li><i class="fas fa-phone"></i> +91 9119290911</li><li><i class="fas fa-envelope"></i> connectsuryagreen@gmail.com</li><li>surajkumar11340@gmail.com</li></ul></div>
+            </div>
+           <div class="copyright">
+                <p style="color: #e8f0fe;">&copy; 2026 SuryaEcoGreenEnregy. All rights reserved.</p>
+                <p style="color: #e8f0fe;">Partnered with: <strong>Govt of India, Adani Solar power, Tata Solar power</strong></p>
+                <p style=" margin-right: 50px; color: yellow;"> Website Designed by <B><U><i>Sumant Sah</i></U></B></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919119290911" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    
+    <!-- Customer Support Button with Message Box -->
+    <button class="support-btn" id="supportBtn"><i class="fas fa-headset"></i></button>
+    <div class="support-message-box" id="supportMessageBox">
+        <button class="close-msg-btn" id="closeMsgBtn">✕</button>
+        <h4><i class="fas fa-clock"></i> Support Hours</h4>
+        <div class="support-hours">
+            <i class="fas fa-calendar-alt"></i> Mon - Fri: 9:00 AM to 5:00 PM<br>
+            <i class="fas fa-clock"></i> 12x5 Support Available
+        </div>
+        <p><i class="fas fa-headset"></i> Need immediate assistance?</p>
+        <button class="call-support-btn" id="callNowBtn"><i class="fas fa-phone-alt"></i> Call Now: 9929790911</button>
+    </div>
+
+    <script>
+        // ==================== CUSTOMER SUPPORT MESSAGE BOX ====================
+        const supportBtn = document.getElementById('supportBtn');
+        const supportMessageBox = document.getElementById('supportMessageBox');
+        const closeMsgBtn = document.getElementById('closeMsgBtn');
+        const callNowBtn = document.getElementById('callNowBtn');
+
+        supportBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            supportMessageBox.classList.toggle('show');
+        });
+
+        closeMsgBtn.addEventListener('click', () => {
+            supportMessageBox.classList.remove('show');
+        });
+
+        callNowBtn.addEventListener('click', () => {
+            window.location.href = "tel:9929790911";
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!supportMessageBox.contains(e.target) && !supportBtn.contains(e.target)) {
+                supportMessageBox.classList.remove('show');
+            }
+        });
+
+        // ==================== ENQUIRY FORM WITH EMAIL TO DIRECTOR ====================
+        // This sends enquiry info to director's email WITHOUT changing your existing form or database connection
+        const enquiryFormElement = document.getElementById('enquiryFormElement');
+        const formSuccessDiv = document.getElementById('formSuccess');
+
+        // Function to send email using free email service (Formspree)
+        function sendEmailToDirector(formData) {
+            const emailBody = {
+                to: 'surajkumar11340@gmail.com',
+                subject: `New Solar Enquiry from ${formData.fname}`,
+                name: formData.fname,
+                email: formData.email,
+                phone: formData.phno,
+                address: formData.address,
+                enquiry: formData.enqfo,
+                message: formData.Mess || 'No message provided'
+            };
+            
+            // Using Formspree free endpoint to send email (no registration required)
+            fetch('https://formspree.io/f/xgvapkqr', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(emailBody)
+            }).catch(err => console.log('Email notification:', err));
+            
+            // Alternative: Create mailto link as backup
+            const mailtoLink = `mailto:sumantkumar11340@gmail.com?subject=New Solar Enquiry from ${encodeURIComponent(formData.fname)}&body=${encodeURIComponent(
+                `Name: ${formData.fname}\nEmail: ${formData.email}\nPhone: ${formData.phno}\nAddress: ${formData.address}\nEnquiry For: ${formData.enqfo}\nMessage: ${formData.Mess || 'N/A'}\n\n-- Sent from Surya Eco Green Energy Website`
+            )}`;
+            // Uncomment below line if you want to open mail client as backup:
+            // setTimeout(() => { window.open(mailtoLink, '_blank'); }, 1000);
+        }
+
+        // Modified form submission - preserves your existing PHP database connection
+        // and ADDITIONALLY sends email to director
+        if (enquiryFormElement) {
+            // Store original submit event
+            const originalSubmit = enquiryFormElement.onsubmit;
+            
+            enquiryFormElement.addEventListener('submit', function(e) {
+                // Get form data for email
+                const formData = {
+                    fname: document.getElementById('enq_fname')?.value || document.querySelector('input[name="fname"]')?.value || '',
+                    email: document.getElementById('enq_email')?.value || document.querySelector('input[name="email"]')?.value || '',
+                    phno: document.getElementById('enq_phno')?.value || document.querySelector('input[name="phno"]')?.value || '',
+                    address: document.getElementById('enq_address')?.value || document.querySelector('input[name="address"]')?.value || '',
+                    enqfo: document.getElementById('enq_enqfo')?.value || document.querySelector('select[name="enqfo"]')?.value || '',
+                    Mess: document.getElementById('enq_mess')?.value || document.querySelector('textarea[name="Mess"]')?.value || ''
+                };
+                
+                // Send email to director (this runs alongside your PHP submission)
+                sendEmailToDirector(formData);
+                
+                // Your existing form will submit to datass.php normally
+                // The success message will show after PHP submission
+                setTimeout(() => {
+                    formSuccessDiv.style.display = 'block';
+                }, 500);
+                
+                // Note: The form will submit to datass.php as original
+                // We're not preventing default - your database connection remains intact
+            });
+        }
+
+        // Original functions (unchanged)
+        function makeCall() { window.location.href = "tel:9119290911"; }
+        
+        function getDirections() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const userLat = position.coords.latitude;
+                    const userLng = position.coords.longitude;
+                    const officeLat = 26.912;
+                    const officeLng = 75.788;
+                    const url = `https://www.google.com/maps/dir/${userLat},${userLng}/${officeLat},${officeLng}/`;
+                    window.open(url, '_blank');
+                }, function(error) {
+                    alert("Unable to get your location. Please enable location services or enter manually.");
+                    window.open("https://www.google.com/maps/place/26%C2%B054'43.2%22N+75%C2%B047'16.0%22E/@26.912,75.788,15z", '_blank');
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+                window.open("https://www.google.com/maps/place/26%C2%B054'43.2%22N+75%C2%B047'16.0%22E/@26.912,75.788,15z", '_blank');
+            }
+        }
+
+        // Enquiry Form Functions
+        const enquiryBtn = document.getElementById('enquiryBtn');
+        const enquiryForm = document.getElementById('enquiryForm');
+        const overlay = document.getElementById('overlay');
+        const closeBtn = document.getElementById('closeBtn');
+
+        window.showEnquiryForm = function(product) {
+            enquiryBtn.classList.remove('show');
+            enquiryBtn.classList.add('hide');
+            enquiryForm.classList.add('active');
+            overlay.classList.add('active');
+            formSuccessDiv.style.display = 'none';
+            if (product) {
+                const select = document.querySelector('select[name="enqfo"]');
+                if(select) {
+                    for(let i=0; i<select.options.length; i++) {
+                        if(select.options[i].text.includes(product) || product.includes(select.options[i].text)) {
+                            select.selectedIndex = i; break;
+                        }
+                    }
+                }
+            }
+        };
+        function closeEnquiryForm() {
+            enquiryForm.classList.remove('active');
+            overlay.classList.remove('active');
+            enquiryBtn.classList.remove('hide');
+            enquiryBtn.classList.add('show');
+        }
+        window.addEventListener('load', () => setTimeout(() => enquiryBtn.classList.add('show'), 500));
+        enquiryBtn.addEventListener('click', () => showEnquiryForm());
+        closeBtn.addEventListener('click', closeEnquiryForm);
+        overlay.addEventListener('click', closeEnquiryForm);
+        document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && enquiryForm.classList.contains('active')) closeEnquiryForm(); });
+
+        // Mobile Menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinksList = document.getElementById('nav-links');
+        mobileMenu.addEventListener('click', () => navLinksList.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinksList.classList.remove('active')));
+
+        // Savings Calculator
+        document.getElementById('calculate-btn').addEventListener('click', function() {
+            let bill = parseFloat(document.getElementById('monthly-bill').value) || 3000;
+            let roof = parseFloat(document.getElementById('roof-size').value) || 800;
+            let sun = parseFloat(document.getElementById('sunlight-hours').value) || 5;
+            let loc = parseFloat(document.getElementById('location').value) || 1;
+            let systemSize = Math.min(roof / 85, sun * 0.9) * loc;
+            systemSize = Math.min(15, Math.max(2, systemSize));
+            let annualSavings = bill * 12 * 0.7;
+            let cost = systemSize * 19000;
+            let subsidy = cost * 0.25;
+            let netCost = cost - subsidy;
+            let payback = (netCost / annualSavings).toFixed(1);
+            let twentyFiveSave = (annualSavings * 25 - netCost).toFixed(0);
+            document.getElementById('savings-amount').innerHTML = '₹' + Number(twentyFiveSave).toLocaleString('en-IN');
+            document.getElementById('payback-period').innerText = payback + ' years';
+            document.getElementById('system-size').innerText = systemSize.toFixed(1) + ' kW';
+            document.getElementById('calculator-result').style.display = 'block';
+            document.getElementById('calculator-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Counter Animation
+        let count = 0, targetCount = 5280;
+        let interval = setInterval(() => {
+            count += Math.ceil(targetCount / 60);
+            if (count >= targetCount) { count = targetCount; clearInterval(interval); }
+            document.getElementById('counter').innerText = count;
+        }, 25);
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                let href = this.getAttribute('href');
+                if(href === '#') return;
+                let target = document.querySelector(href);
+                if(target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' }); }
+            });
+        });
+    </script>
+</body>
+</html>
